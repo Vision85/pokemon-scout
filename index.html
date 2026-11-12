@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pokémon Scout — Collector intelligence</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><a class="brand" href="#">SCOUT<span> / Pokémon</span></a><nav><a href="#watchlist">Watchlist</a><a href="#method">The method</a></nav></header>
+<main>
+<section class="hero"><div><p class="eyebrow">COLLECTOR INTELLIGENCE / LOCAL EDITION</p><h1>Research the card.<br><em>Not the hype.</em></h1><p class="intro">A quieter place to track your cards, compare completed sales, and record the evidence before you buy.</p><a class="button" href="#add">Start your research ↗</a></div><aside class="brief"><span class="eyebrow">TODAY’S RESEARCH BRIEF</span><h2>Asking is not selling.</h2><p>Match the exact printing, language, condition, and grading status. Check completed sales before treating a price as market evidence.</p><div class="status">Manual research · No live market feed</div></aside></section>
+<section class="stats" aria-label="Watchlist overview"><div><strong id="count">0</strong><span>Cards on your radar</span></div><div><strong id="sales-count">0</strong><span>Recorded sale references</span></div><div><strong>No feed</strong><span>Prices are user-entered, not verified</span></div></section>
+<section id="watchlist"><div class="section-heading"><div><p class="eyebrow">YOUR RESEARCH DESK</p><h2>Watchlist</h2></div><div class="tools"><input id="search" type="search" placeholder="Search your watchlist" aria-label="Search watchlist"><button id="export" class="secondary">Export backup</button></div></div><p class="muted">Saved in this browser only. Export a backup before clearing browser data. Do not store private information.</p><div id="cards" class="cards"></div></section>
+<section id="add" class="panel"><p class="eyebrow">FOLLOW A CARD</p><h2>Add to your radar</h2><form id="add-form"><div class="fields"><label>Card name<input name="name" required maxlength="100" placeholder="e.g. Charizard ex"></label><label>Set and collector number<input name="set" required maxlength="140" placeholder="Exact set · 199/165"></label><label>Language<input name="language" required maxlength="40" value="English"></label><label>Condition / grading<input name="condition" required maxlength="100" placeholder="Raw Near Mint, or PSA 10"></label></div><button class="button" type="submit">Add card +</button></form></section>
+<section id="method"><p class="eyebrow">THE SCOUT METHOD</p><h2>Four checks. One considered decision.</h2><div class="method"><article><b>01 / Completed sales</b><p>Use comparable transactions, not active listings. Keep a source link, sale date, currency, and shipping treatment.</p></article><article><b>02 / Condition</b><p>Compare like for like. A raw card and a graded copy belong in separate research records.</p></article><article><b>03 / Supply & reprints</b><p>Check official announcements. Distinguish confirmed releases from speculation.</p></article><article><b>04 / Exit & budget</b><p>Record your maximum spend and consider fees, shipping, time, and potential losses.</p></article></div></section>
+<section class="panel roadmap"><div><p class="eyebrow">ON THE HORIZON</p><h2>Scout Plus</h2><p>Cross-device portfolios, alerts, release tracking, and weekly research briefs are future possibilities—not available features. This prototype has no accounts, billing, or automated data connection.</p></div></section>
+<p id="message" role="status" aria-live="polite"></p>
+</main><footer>Independent collector research tool. Not affiliated with The Pokémon Company. No investment advice or guaranteed returns. Pokémon is a trademark of its respective owners.</footer>
+<script src="app.js"></script></body></html>
